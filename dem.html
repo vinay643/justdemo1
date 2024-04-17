@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <!-- Include Tailwind CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+   <!-- Navigation bar -->
+<nav class="navbar">
+    <div class="container navbar-container">
+        <!-- Logo or brand -->
+        <a href="#" class="navbar-logo">Chat App</a>
+        <!-- Navigation links -->
+        <div class="navbar-links">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Chat</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container mx-auto py-8">
+        <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg"  style="margin-left: 25%;">
+            <!-- Chat window -->
+            <div class="chat-window p-4 h-80" id="chatWindow">
+                <div class="flex flex-col space-y-4" id="messageContainer">
+                    <!-- Messages will be inserted here -->
+                </div>
+            </div>
+            <!-- Input area -->
+            <div class="p-4 border-t border-gray-200">
+                <div class="flex items-center">
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+                  
+                    <input id="messageInput" type="text" placeholder="Type your message..." class="flex-1 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:border-blue-500">
+                    <button id="sendMessageBtn" class="ml-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include external JavaScript file -->
+    <script src="chat.js"></script>
+</body>
+
+</html>
